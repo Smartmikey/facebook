@@ -11,9 +11,9 @@ const stories = [
         profile: "https://links.papareact.com/kxk"
     },
     {
-        name: "Jeff Bezoz",
-        src: "https://links.papareact.com/k2j",
-        profile: "https://links.papareact.com/f0p"
+        name: "Michael Monday Abah",
+        src: "https://avatars.githubusercontent.com/u/38321155?u=1df51d57e45a3f7a11c8c4fbc9faa51daacbf5cc&v=4",
+        profile: "https://media-exp1.licdn.com/dms/image/C4D03AQFGtN63bx6R5g/profile-displayphoto-shrink_800_800/0/1633476029059?e=1640217600&v=beta&t=bOYMhX0hD2HKtZgi9FONIIXuXegOELSSjpgSpZa_HVc"
     },
     {
         name: "Mark Zuckerberg",
