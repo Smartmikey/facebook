@@ -17,7 +17,6 @@ import HeaderIcon from "./HeaderIcon";
 import { signOut, useSession } from "next-auth/client"
 function Header() {
     const [session] = useSession()
-    console.log(session);
     return (
         <div className="bg-gray-400">
 

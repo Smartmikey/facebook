@@ -5,12 +5,12 @@ import Feed from '../components/Feed'
 import Header from '../components/Header'
 import Login from '../components/Login'
 import Sidebar from '../components/Sidebar'
-import styles from '../styles/Home.module.css'
+import Widgets from '../components/Widgets'
 
 export default function Home({ session }) {
   if(!session) return <Login />
   return (
-    <div >
+    <div className="h-screen bg-gray-100 overflow-hidden">
       <Head>
         <title>Facebook</title>
         
@@ -19,12 +19,14 @@ export default function Home({ session }) {
       
       <Header/>
 
-      <main className="flex bg-gray-100">
+      <main className="flex ">
         {/* sidebar */}
         <Sidebar />
         {/* Feed */}
         <Feed />
         {/* widgets */}
+        <Widgets />
+
       </main>
     </div>
   )
