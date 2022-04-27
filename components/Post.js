@@ -1,12 +1,22 @@
 import Image from "next/image";
 import { ChatAltIcon, ShareIcon, ThumbUpIcon } from "@heroicons/react/outline";
+import { useSession } from "next-auth/client";
 
 function Post({name, message, email, image, postImage, timestamp}) {
+    const [session] = useSession()
+
     return (
         <div className="flex flex-col">
             <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-sm">
             <div className="flex items-center space-x-2">
-                <img src={image} width={40} height={40} className="rounded-full" />
+            {session?.user?.image && (<Image
+                    src={session?.user?.image}
+                    className="rounded-full "
+                    width={40}
+                    height={40}
+                    layout="fixed" 
+                    />)}
+                {/* <img src={image} width={40} height={40} className="rounded-full" /> */}
                 <div>
                     <p className="font-medium">{name}</p>
                     <p>{new Date(timestamp?.toDate()).toLocaleString()}</p>
